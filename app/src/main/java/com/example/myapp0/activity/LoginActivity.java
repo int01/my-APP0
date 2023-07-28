@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import com.example.myapp0.R;
 
+import okhttp3.OkHttpClient;
+
 public class LoginActivity extends BaseActivity {
 
     private EditText editAccount;
@@ -46,5 +48,6 @@ public class LoginActivity extends BaseActivity {
             showToast("密码空");
             return;
         }
+        OkHttpClient okHttpClient = new OkHttpClient();
     }
 }
